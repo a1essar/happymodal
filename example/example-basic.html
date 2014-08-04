@@ -1,0 +1,242 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Modal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="/happymodal/happymodal.min.css"/>
+    <script src="/happymodal/jquery.happymodal.min.js"></script>
+     
+    <link rel="stylesheet" href="example.css"/>
+    <script src="example.js"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
+    
+    <script>
+        $(function() {
+            var api = $.data($('.js__happymodal-bounce-elements')[0], 'plugin_happymodal');
+            api.options.showCallback = function(el){
+                el.$element.find('.js__happymodal-dialog, .js__happymodal-content > *').addClass('animated bounceInUp'); 
+            };
+            
+            api.options.hideCallback = function(el){
+                el.$element.find('.js__happymodal-dialog, .js__happymodal-content > *').removeClass('animated bounceInUp'); 
+            };
+            
+            var modal = 'example-1';  
+            var api = $.data($('[data-happymodal="example-1"]')[0], 'plugin_happymodal');
+            api.show(); 
+            
+            console.log(api.version);
+        });
+    </script>
+</head>
+<body class="">
+    <div class="container">
+        <p><a href="/happymodal">&larr; happymodal</a></p>
+        <h2>Examples:</h2>
+        <ul>
+            <li><a href="#" data-happymodal-open="example-1">Modal</a></li>
+            <li><a href="#" data-happymodal-open="example-long-modal">Long modal</a></li>
+            <li><a href="#" data-happymodal-open="example-slide-top">Slide top animation</a></li>
+            <li><a href="#" data-happymodal-open="example-slide-bottom">Slide bottom animation</a></li>
+            <li><a href="#" data-happymodal-open="example-backdrop-blur">Backdrop blur</a></li>
+            <li><a href="#" data-happymodal-open="example-3d">3d animation</a></li>
+            <li><a href="#" data-happymodal-open="example-bounce-elements">Bounce modal elements</a></li>
+            <li><a href="#" data-happymodal-open="example-bounce">Bounce modal</a></li>
+            <li><a href="#" class="open">Open modal example-1 through api</a></li>
+        </ul>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel</p>
+        <p>vulputate eros nulla, luctus laoreet eros semper commodo. Quisque ullamcorper porta augue, sed condimentum eros. Phasellus in augue auctor, tempus velit vestibulum, placerat purus. Morbi sagittis, massa eget elementum congue, quam augue tristique nunc, non tristique purus purus sed ipsum. Maecenas fringilla ipsum eu lorem ornare bibendum. Aliquam mattis erat tellus, quis mollis elit iaculis eu. Fusce fermentum tortor vulputate fermentum aliquet. Aenean dictum sodales tellus, et consectetur purus volutpat a.</p>
+        <p>Aenean commodo ligula sit amet eleifend consectetur. Aenean sodales libero sit amet elementum rutrum. Integer convallis, nunc sed pharetra ultrices, lacus ipsum gravida nisl, ac ultricies arcu velit eget nunc. Integer molestie ligula massa, vitae suscipit diam elementum eu. Pellentesque diam libero, facilisis vel nibh id, pharetra posuere leo. Nunc convallis est ut purus gravida lacinia. Ut mattis mi vel urna aliquam tincidunt ut vehicula nisl. Vivamus elit enim, pharetra quis nisi a, fringilla laoreet mi. Donec pharetra odio metus, sit amet iaculis risus dictum a. Quisque ornare nulla arcu, ut mattis felis ultrices sed. In sed nunc dolor. In vestibulum imperdiet enim, vitae dapibus elit congue non. Pellentesque nec elit enim. Aenean consequat tortor sed augue vulputate, ut condimentum nisl viverra. Quisque ut lectus quis magna sagittis adipiscing.</p>
+        <p>Nunc nibh neque, lacinia porttitor magna consectetur, euismod congue dui. Maecenas molestie nibh tincidunt, volutpat purus ut, molestie felis. Praesent nibh purus, sollicitudin adipiscing eros nec, viverra egestas sapien. Nam sed tortor lectus. Vivamus sed convallis lectus, et iaculis enim. Praesent convallis est sit amet tristique elementum. Ut sem orci, sodales in mi vel, commodo condimentum urna. Nulla facilisi. Curabitur sed nunc tempus risus mollis tempus sit amet eget elit. Integer ultrices quis massa a consequat.</p>
+        <p>Cras in dui sed nulla aliquet laoreet eu nec arcu. Proin gravida hendrerit diam id lobortis. Etiam in ultrices dui. Nulla et faucibus mauris. Praesent et aliquet lacus. Cras tempor mattis massa, quis dapibus turpis commodo sed. Praesent nunc mi, congue sed fermentum blandit, commodo ut tellus. Vivamus eu mauris ac orci sagittis tincidunt. Phasellus auctor tellus in ultrices sagittis. Suspendisse mattis, nisi at bibendum fermentum, elit libero dictum massa, a egestas metus ante id elit. Donec convallis elit eu metus dignissim accumsan. Aenean venenatis est ut justo consequat iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin gravida scelerisque magna, sit amet pretium sem semper et. Nullam id eros purus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+        <p>Sed vulputate eros nulla, luctus laoreet eros semper commodo. Quisque ullamcorper porta augue, sed condimentum eros. Phasellus in augue auctor, tempus velit vestibulum, placerat purus. Morbi sagittis, massa eget elementum congue, quam augue tristique nunc, non tristique purus purus sed ipsum. Maecenas fringilla ipsum eu lorem ornare bibendum. Aliquam mattis erat tellus, quis mollis elit iaculis eu. Fusce fermentum tortor vulputate fermentum aliquet. Aenean dictum sodales tellus, et consectetur purus volutpat a.</p>
+        <p>Aenean commodo ligula sit amet eleifend consectetur. Aenean sodales libero sit amet elementum rutrum. Integer convallis, nunc sed pharetra ultrices, lacus ipsum gravida nisl, ac ultricies arcu velit eget nunc. Integer molestie ligula massa, vitae suscipit diam elementum eu. Pellentesque diam libero, facilisis vel nibh id, pharetra posuere leo. Nunc convallis est ut purus gravida lacinia. Ut mattis mi vel urna aliquam tincidunt ut vehicula nisl. Vivamus elit enim, pharetra quis nisi a, fringilla laoreet mi. Donec pharetra odio metus, sit amet iaculis risus dictum a. Quisque ornare nulla arcu, ut mattis felis ultrices sed. In sed nunc dolor. In vestibulum imperdiet enim, vitae dapibus elit congue non. Pellentesque nec elit enim. Aenean consequat tortor sed augue vulputate, ut condimentum nisl viverra. Quisque ut lectus quis magna sagittis adipiscing.</p>
+        <p>Nunc nibh neque, lacinia porttitor magna consectetur, euismod congue dui. Maecenas molestie nibh tincidunt, volutpat purus ut, molestie felis. Praesent nibh purus, sollicitudin adipiscing eros nec, viverra egestas sapien. Nam sed tortor lectus. Vivamus sed convallis lectus, et iaculis enim. Praesent convallis est sit amet tristique elementum. Ut sem orci, sodales in mi vel, commodo condimentum urna. Nulla facilisi. Curabitur sed nunc tempus risus mollis tempus sit amet eget elit. Integer ultrices quis massa a consequat.</p>
+        <p>Cras in dui sed nulla aliquet laoreet eu nec arcu. Proin gravida hendrerit diam id lobortis. Etiam in ultrices dui. Nulla et faucibus mauris. Praesent et aliquet lacus. Cras tempor mattis massa, quis dapibus turpis commodo sed. Praesent nunc mi, congue sed fermentum blandit, commodo ut tellus. Vivamus eu mauris ac orci sagittis tincidunt. Phasellus auctor tellus in ultrices sagittis. Suspendisse mattis, nisi at bibendum fermentum, elit libero dictum massa, a egestas metus ante id elit. Donec convallis elit eu metus dignissim accumsan. Aenean venenatis est ut justo consequat iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin gravida scelerisque magna, sit amet pretium sem semper et. Nullam id eros purus.</p>
+        
+    </div>
+    
+    <div class="js__happymodal happymodal" data-happymodal="example-1">
+        <div class="js__happymodal-dialog happymodal-dialog">
+            <div class="js__happymodal-content happymodal-content">
+                <a class="js__happymodal-close happymodal-close happymodal-close-icon" href="#"></a>
+                <div class="happymodal-header">
+                    <h1 class="happymodal-title">Example modal</h1>
+                </div>
+                <div class="happymodal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                </div>
+                <div class="happymodal-footer"></div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="js__happymodal happymodal happymodal-slide-top" data-happymodal="example-slide-top">
+        <div class="js__happymodal-dialog happymodal-dialog">
+            <div class="js__happymodal-content happymodal-content">
+                <a class="js__happymodal-close happymodal-close happymodal-close-icon" href="#"></a>
+                <div class="happymodal-header">
+                    <h1 class="happymodal-title">Example slide top animation</h1>
+                </div>
+                <div class="happymodal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                </div>
+                <div class="happymodal-footer"></div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="js__happymodal happymodal happymodal-slide-bottom" data-happymodal="example-slide-bottom">
+        <div class="js__happymodal-dialog happymodal-dialog">
+            <div class="js__happymodal-content happymodal-content">
+                <a class="js__happymodal-close happymodal-close happymodal-close-icon" href="#"></a>
+                <div class="happymodal-header">
+                    <h1 class="happymodal-title">Example slide bottom animation</h1>
+                </div>
+                <div class="happymodal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                </div>
+                <div class="happymodal-footer"></div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="js__happymodal happymodal happymodal-slide-bottom" data-happymodal="example-backdrop-blur" data-happymodal-options='{"backdropBlur": true}'>
+        <div class="js__happymodal-dialog happymodal-dialog">
+            <div class="js__happymodal-content happymodal-content">
+                <a class="js__happymodal-close happymodal-close happymodal-close-icon" href="#"></a>
+                <div class="happymodal-header">
+                    <h1 class="happymodal-title">Example backdrop blur</h1>
+                </div>
+                <div class="happymodal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                </div>
+                <div class="happymodal-footer"></div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="js__happymodal happymodal happymodal-3d" data-happymodal="example-3d" data-happymodal-options='{"backdropBlur": true}'>
+        <div class="js__happymodal-dialog happymodal-dialog">
+            <div class="js__happymodal-content happymodal-content">
+                <a class="js__happymodal-close happymodal-close happymodal-close-icon" href="#"></a>
+                <div class="happymodal-header">
+                    <h1 class="happymodal-title">Example 3d aniamtion</h1>
+                </div>
+                <div class="happymodal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                </div>
+                <div class="happymodal-footer"></div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="js__happymodal-bounce-elements happymodal happymodal-bounce-elements" data-happymodal="example-bounce-elements">
+        <div class="js__happymodal-dialog happymodal-dialog">
+            <div class="js__happymodal-content happymodal-content">
+                <a class="js__happymodal-close happymodal-close happymodal-close-icon" href="#"></a>
+                <div class="happymodal-header">
+                    <h1 class="happymodal-title">Example elements animate</h1>
+                </div>
+                <div class="happymodal-body">
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Check me out
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+                <div class="happymodal-footer"></div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="js__happymodal-bounce-elements happymodal happymodal-bounce" data-happymodal="example-bounce">
+        <div class="js__happymodal-dialog happymodal-dialog">
+            <div class="js__happymodal-content happymodal-content">
+                <a class="js__happymodal-close happymodal-close happymodal-close-icon" href="#"></a>
+                <div class="happymodal-header">
+                    <h1 class="happymodal-title">Example elements animate</h1>
+                </div>
+                <div class="happymodal-body">
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Check me out
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+                <div class="happymodal-footer"></div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="js__happymodal happymodal" data-happymodal="example-long-modal">
+        <div class="js__happymodal-dialog happymodal-dialog">
+            <div class="js__happymodal-content happymodal-content">
+                <a class="js__happymodal-close happymodal-close happymodal-close-icon" href="#"></a>
+                <div class="happymodal-header">
+                    <h1 class="happymodal-title">Example long modal</h1>
+                </div>
+                <div class="happymodal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et diam id augue dapibus porttitor sed et justo. Integer ac risus eget ante sodales vulputate. Sed at sapien a nisl iaculis ultricies. Cras aliquam felis lectus, quis faucibus dui dapibus nec. Vestibulum non purus dictum, volutpat enim ac, venenatis tortor. Pellentesque ullamcorper aliquet velit vel laoreet. Proin quis metus id leo cursus consequat. Vestibulum elementum, lorem id rhoncus placerat, felis tellus viverra purus, pharetra condimentum justo lorem eu elit. Aliquam pulvinar, eros non imperdiet congue, ipsum neque aliquam lorem, at ultrices urna sapien sed elit. Aliquam facilisis aliquet mauris sed ultricies. Maecenas dui sem, eleifend sit amet dapibus ut, volutpat vel nisi.</p>
+                </div>
+                <div class="happymodal-footer"></div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
