@@ -9,7 +9,7 @@
   ],
   "homepage": "https://github.com/a1essar/happymodal",
   "main": [
-    "jquery.happymodal.js",
+    "jquery.happymodal.css",
     "jquery.happymodal.min.js",
     "happymodal.min.css.map",
     "jquery.happymodal.min.js.map"
