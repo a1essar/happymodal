@@ -7,14 +7,12 @@
     "js",
     "front-end"
   ],
-  "homepage": "http://lab.happycms.ru/happymodal",
+  "homepage": "https://github.com/a1essar/happymodal",
   "main": [
-    "src/happymodal.css",
-    "src/happymodal.min.css",
-    "dist/jquery.happymodal.js",
-    "dist/jquery.happymodal.min.js",
-    "dist/happymodal.min.css.map",
-    "dist/jquery.happymodal.min.js.map"
+    "jquery.happymodal.js",
+    "jquery.happymodal.min.js",
+    "happymodal.min.css.map",
+    "jquery.happymodal.min.js.map"
   ],
   "ignore": [
     "src",
