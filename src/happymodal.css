@@ -164,24 +164,13 @@
     
 }
 
-.happymodal-blur{
-    filter: blur(2px);
-    transition: all 600ms linear;
-    backface-visibility: hidden;
-}
-
-.happymodal-backdrop.happymodal-blur{
-    background: rgba(0, 0, 0, 0.1);    
-}
-
 .happymodal-slide-top{
-    display: block;
     visibility: hidden;
-    
+
     transition: all 300ms ease;
     transform: translate(0px, 300px);
     opacity: 0;
-    
+
     backface-visibility: hidden;
 }
 
@@ -189,6 +178,17 @@
     visibility: visible;
     transform: translate(0px, 0px);
     opacity: 1;
+}
+
+/*
+.happymodal-blur{
+    filter: blur(2px);
+    transition: all 600ms linear;
+    backface-visibility: hidden;
+}
+
+.happymodal-backdrop.happymodal-blur{
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .happymodal-slide-bottom{
@@ -274,12 +274,14 @@
     animation: bounceJelly 1000ms linear both;
 }
 
+*/
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2014 Daniel Eden
-*/
+*//*
+
 
 .animated {
   animation-duration: 1s;
@@ -376,7 +378,9 @@ Copyright (c) 2014 Daniel Eden
   animation: animation 1000ms linear both;
 }
 
-/* Generated with Bounce.js. Edit at http://goo.gl/2tFhU5 */
+*/
+/* Generated with Bounce.js. Edit at http://goo.gl/2tFhU5 *//*
+
 
 @-webkit-keyframes bounceJelly { 
   0% { -webkit-transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
@@ -506,3 +510,4 @@ Copyright (c) 2014 Daniel Eden
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
 }
 
+*/

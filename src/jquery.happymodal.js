@@ -44,6 +44,7 @@
         this.$content = this.$element.find(this.content);
         this.$close = this.$element.find(this.close);
         this.$backdrop = $(this.backdrop);
+        this.transition = this.$element.css('transition');
         
         this.$body = $('body');
         this.modalBackdropTemplate = '<div class="js__happymodal-backdrop happymodal-backdrop backdrop-hide"></div>';
@@ -104,6 +105,7 @@
         
         show: function() {
             this.$elements.removeClass('happymodal-open');
+            this.$element.css('display', 'block').height();
             this.$element.addClass('happymodal-open');
             this.$backdrop.removeClass('backdrop-hide');  
             
@@ -117,12 +119,17 @@
         },
         
         hide: function(){
+            var _this = this;
             this.$element.removeClass('happymodal-open');
             this.$backdrop.addClass('backdrop-hide');  
             
             if(this.options.backdropBlur){
                 this.$body.find('> *').not('.happymodal-open').removeClass('happymodal-blur');   
-            }  
+            }
+
+            setTimeout(function(){
+                _this.$element.css('display', 'none');
+            }, 300);
             
             this.draw();
             

@@ -15,7 +15,6 @@
     "jquery.happymodal.min.js.map"
   ],
   "ignore": [
-    "src",
     "example",
     "/.*",
     "CNAME",
