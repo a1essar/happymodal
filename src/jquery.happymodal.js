@@ -97,6 +97,8 @@
             if(this.window.height < this.modal.height){
                 this.$element.addClass('happymodal-static');
                 this.$body.addClass('body-happymodal-static');
+
+                window.scrollTo(0, 0);
             }else{
                 this.$element.removeClass('happymodal-static');
                 this.$body.removeClass('body-happymodal-static');
