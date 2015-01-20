@@ -9,10 +9,8 @@
   ],
   "homepage": "https://github.com/a1essar/happymodal",
   "main": [
-    "jquery.happymodal.css",
-    "jquery.happymodal.min.js",
-    "happymodal.min.css.map",
-    "jquery.happymodal.min.js.map"
+    "src/happymodal.css",
+    "src/jquery.happymodal.js",
   ],
   "ignore": [
     "example",

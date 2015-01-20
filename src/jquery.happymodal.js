@@ -98,6 +98,8 @@
                 this.$element.addClass('happymodal-static');
                 this.$body.addClass('body-happymodal-static');
 
+                document.body.offsetHeight;
+
                 window.scrollTo(0, 0);
             }else{
                 this.$element.removeClass('happymodal-static');
