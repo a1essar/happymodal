@@ -121,8 +121,10 @@
         hide: function(){
             var _this = this;
             this.$element.removeClass('happymodal-open');
-            this.$backdrop.addClass('backdrop-hide');  
-            
+            this.$backdrop.addClass('backdrop-hide');
+
+            this.$body.removeClass('body-happymodal-static');
+
             if(this.options.backdropBlur){
                 this.$body.find('> *').not('.happymodal-open').removeClass('happymodal-blur');   
             }
