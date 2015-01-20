@@ -10,7 +10,7 @@
   "homepage": "https://github.com/a1essar/happymodal",
   "main": [
     "src/happymodal.css",
-    "src/jquery.happymodal.js",
+    "src/jquery.happymodal.js"
   ],
   "ignore": [
     "example",
