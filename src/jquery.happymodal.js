@@ -97,10 +97,7 @@
             if(this.window.height < this.modal.height){
                 this.$element.addClass('happymodal-static');
                 this.$body.addClass('body-happymodal-static');
-
-                document.body.offsetHeight;
-
-                window.scrollTo(0, 0);
+                this.$element.css('top', $(window).scrollTop());
             }else{
                 this.$element.removeClass('happymodal-static');
                 this.$body.removeClass('body-happymodal-static');
@@ -127,7 +124,10 @@
             this.$element.removeClass('happymodal-open');
             this.$backdrop.addClass('backdrop-hide');
 
-            this.$body.removeClass('body-happymodal-static');
+            if(this.$body.is('.body-happymodal-static')){
+                this.$element.css('top', '');
+                this.$body.removeClass('body-happymodal-static');
+            }
 
             if(this.options.backdropBlur){
                 this.$body.find('> *').not('.happymodal-open').removeClass('happymodal-blur');   
@@ -201,15 +201,15 @@
         return function() {
             return fn.apply(context, arguments);
         };
-    };
+    }
         
     function addEventListener(element, type, callback) {
         element.on(type, callback);
-    };
+    }
         
     function removeEventListener(element, type, callback) {
         element.off(type, callback);
-    };
+    }
     
     function dataInit(){
         if($('[data-happymodal]').length > 0){
