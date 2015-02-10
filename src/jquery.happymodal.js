@@ -91,7 +91,7 @@
             
             this.modal = {
                 width: this.$dialog.width(),
-                height: this.$dialog.height(),
+                height: this.$dialog.outerHeight(true),
             };
             
             if(this.window.height < this.modal.height){
